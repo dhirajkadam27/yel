@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.app {
+    background-color: black;
+    font-family: "Inter", sans-serif;
+    color: white;
+
+    button,a,input{
+    font-family: "Inter", sans-serif;
+    }
+
+    .main {
+        width: 100%;
+        height: 100vh;
+        min-height: 600px;
+        position: relative;
+        overflow: hidden;
+
+        .bg {
+            height: 100%;
+            filter: brightness(0.5);
+            position: absolute;
+            z-index: 0;
+        }
+
+
+        .hero {
+            padding: 20px 20px;
+            position: relative;
+        
+            .title {
+                font-size: 80px;
+                font-weight: 300;
+                text-align: center;
+                margin-top: 15vh;
+                color: white;
+            }
+        
+            .subtitle {
+                font-size: 20px;
+                font-weight: 400;
+                width: 565px;
+                margin: 0px auto;
+                margin-top: 20px;
+                text-align: center;
+            }
+        
+        
+            .btns {
+                margin-top: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        
+                button {
+                    background: white;
+                    color: black;
+                    border: none;
+                    padding: 10px 15px;
+                    margin: 5px 10px;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        
+            .btns button:nth-child(1) {
+                color: white;
+                background: none;
+            }
+        
+            @media (max-width:650px) {
+                .title{
+                    font-size: 60px;
+                }
+                .subtitle {
+                    font-size: 18px;
+                    width: unset;
+                    padding: 0px 20px;
+                }
+            }
+
+            
+            @media (max-width:490px) {
+                .title{
+                    font-size: 40px;
+                }
+                .subtitle {
+                    font-size: 15px;
+                }
+            }
+        
+        }
+        
+    }
+
+    .why {
+        padding: 20px 50px;
+    
+        .question {
+            font-size: 60px;
+            font-weight: 400;
+            text-align: left;
+            color: white;
+            margin-top: 80px;
+        }
+    
+        .shortanswer {
+            font-size: 15px;
+            font-weight: 200;
+            text-align: left;
+            margin-top: 5px;
+        }
+    
+        .answer {
+            font-size: 20px;
+            font-weight: 400;
+            text-align: left;
+            margin-top: 30px;
+        }
+    
+
+        @media (max-width:700px) {
+            padding: 20px 20px;
+
+            .question {
+                font-size: 40px;
+            }
+
+            .answer {
+                font-size: 18px;
+            }
+           
+        }
+
+    }
+
+    
+.services {
+    padding: 20px 50px;
+
+    .maintitle {
+        margin-top: 200px;
+        margin-bottom: 50px;
+        font-size: 60px;
+        font-weight: 400;
+        text-align: center;
+        color: white;
+    }
+
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .box {
+        width: 400px;
+        border: 1px solid #242424;
+        padding: 25px;
+        border-radius: 8px;
+        background: #121212;
+
+    }
+
+    .nobox {
+        width: 400px;
+        height: 150px;
+        padding: 25px;
+    }
+
+
+    .title {
+        margin-top: 50px;
+        font-size: 30px;
+        font-weight: 500;
+        text-align: left;
+        color: white;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        font-weight: 200;
+        text-align: left;
+        margin-top: 5px;
+    }
+
+
+    @media (max-width:700px) {
+        padding: 20px 20px;
+
+        .maintitle {
+            font-size: 40px;
+        }
+
+    }
+    
+    @media (max-width:560px) {
+        padding: 20px 20px;
+
+        .box {
+            width: -webkit-fill-available;
+        }
+
+        .nobox {
+            width: -webkit-fill-available;
+        }
+       
+    }
+}
+
+
+.works {
+    padding: 20px 50px;
+
+    .maintitle {
+        margin-bottom: 50px;
+        font-size: 60px;
+        font-weight: 400;
+        text-align: left;
+        color: white;
+    }
+
+    .box {
+        display: flex;
+        align-items: start;
+        margin-top: 50px;
+    }
+
+    .number {
+        font-size: 60px;
+        font-weight: 700;
+        text-align: left;
+        background: -webkit-linear-gradient(90deg, white, #4F4F4F);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: -20px;
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+
+    .title {
+        font-size: 30px;
+        font-weight: 400;
+        text-align: left;
+        background: linear-gradient(rgba(255, 255, 255, 1), rgba(78, 78, 78, 1));
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .subinformation {
+        font-size: 15px;
+        font-weight: 200;
+        text-align: left;
+        margin-top: 5px;
+    }
+
+        
+    @media (max-width:700px) {
+        padding: 20px 20px;
+        .maintitle {
+            font-size: 40px;
+        }
+
+        .number {
+            margin-left: 20px;
+        }
+
+        .title {
+            font-size: 20px;
+        }
+    
+        .subinformation {
+            font-size: 13px;
+        }
+    }
+}
+
+    
+.industries {
+    padding: 20px 50px;
+
+    .maintitle {
+        margin-top: 200px;
+        margin-bottom: 50px;
+        font-size: 60px;
+        font-weight: 400;
+        text-align: center;
+        color: white;
+    }
+
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .box {
+        padding: 10px 20px;
+        border-radius: 8px;
+        background: linear-gradient(45deg, #0a0a0a, #1c1c1c);
+        border: 1px solid #2b2b2b;
+
+    }
+
+
+    .title {
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+    }
+
+    @media (max-width:700px) {
+        padding: 20px 20px;
+
+        .maintitle {
+            font-size: 40px;
+        }
+
+    }
+    
+    @media (max-width:560px) {
+
+        .box {
+            width: -webkit-fill-available;
+        }
+       
+    }
+}
+
+
+
+.Choose {
+    padding: 20px 50px;
+
+    .question {
+        margin-top: 200px;
+        margin-bottom: 50px;
+        font-size: 60px;
+        font-weight: 400;
+        text-align: left;
+        color: white;
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        background: linear-gradient(rgba(255, 255, 255, 1), rgba(78, 78, 78, 1));
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        font-size: 18px;
+        font-weight: 200;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    @media (max-width:700px) {
+        padding: 20px 20px;
+
+        .question {
+            font-size: 40px;
+        }
+       
+    }
+}
+
+
+.started {
+    padding: 20px 20px;
+    position: relative;
+
+    .title {
+        font-size: 80px;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 200px !important;
+        color: white;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        font-weight: 400;
+        width: 565px;
+        margin: 0px auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+
+    .btns {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            background: white;
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px 10px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+
+    .btns button:nth-child(1) {
+        color: white;
+        background: none;
+    }
+
+    @media (max-width:800px) {
+        .title{
+            width: 640px;
+            margin: auto;
+        }
+    }
+
+    @media (max-width:650px) {
+        .title{
+            width: 425px;
+            font-size: 60px;
+        }
+        .subtitle {
+            font-size: 18px;
+            width: unset;
+            padding: 0px 20px;
+        }
+    }
+
+    
+    @media (max-width:490px) {
+        .title{
+            width: 280px;
+            font-size: 40px;
+        }
+        .subtitle {
+            font-size: 15px;
+        }
+    }
+
+}
+
+
+.footer {
+    margin-top: 200px;
+    padding: 20px 50px;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 20px;
+
+     .section {
+        width: 350px;
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+
+    .title {
+        margin-bottom: 10px;
+        font-weight: 500;
+        color: white;
+        cursor: pointer;
+    }
+
+     .link {
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .social {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        svg{
+            width: 20px;
+        fill: white;
+        }
+    }
+}
+
+.copyright {
+    width:calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+    border-top: 1px solid white;
+
+
+    .cc,
+    .links {
+        font-size: 15px;
+        font-weight: 200;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+}
+
+
+}
